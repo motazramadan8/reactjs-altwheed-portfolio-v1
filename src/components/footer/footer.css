@@ -1,0 +1,37 @@
+.footer {
+  background-color: var(--dark-purple);
+  color: var(--white-color);
+  font-weight: 600;
+}
+
+.footer a {
+  color: var(--white-color);
+  font-weight: 700;
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+.social-media {
+    padding: 30px 0;
+  display: flex;
+  justify-content: center;
+}
+.social-media img {
+  width: 60px;
+  padding: 0 10px;
+  transition: 0.2s all ease;
+}
+.social-media img:hover {
+  transform: scale(1.1);
+}
+.copyright-text span {
+  color: #9937cd;
+  font-weight: 700;
+}
+@media (max-width: 400px) {
+  .social-media img {
+    width: 40px;
+    padding: 0 5px;
+    transition: 0.2s all ease;
+  }
+}

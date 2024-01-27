@@ -1,0 +1,142 @@
+.register-section {
+  min-height: 100vh;
+  background-color: var(--bgc-body);
+  color: var(--text-color);
+  width: 100%;
+  position: relative;
+}
+
+.register-section::after {
+  content: "";
+  background: url(../../images/form.svg) no-repeat center;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  pointer-events: none;
+  background-size: cover;
+  opacity: 0.04;
+}
+
+.register-section h1 {
+  text-align: center;
+  margin: 0 0 20px 0;
+  font-size: 40px;
+  color: var(--text-color);
+}
+
+.register-dev-form {
+  background-color: transparent;
+  width: 500px;
+  padding: 20px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: 3;
+}
+
+.register-form {
+  background-color: #6a49f2;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.register-form input:nth-child(2) {
+  margin-right: 0;
+}
+
+.register-form input {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 4px;
+  background-color: var(--bgc-body);
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  color: var(--text-color);
+}
+
+.input-dev {
+  position: relative;
+}
+
+.input-dev svg {
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 25px;
+  position: absolute;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+::placeholder {
+  color: var(--text-color);
+}
+
+.register-section .register-btn {
+  background-color: var(--bgc-body);
+  border: none;
+  outline: none;
+  color: var(--text-color);
+  border-radius: 10px;
+  padding: 10px 20px;
+  width: 40%;
+  margin: 0 auto;
+  transition: 0.4s;
+}
+
+.register-section .register-btn:hover {
+  background-color: var(--dark-purple);
+  color: var(--text-color);
+}
+
+.register-section h6 {
+  font-size: 18px;
+  text-align: center;
+  margin: 20px 0 0 0;
+}
+
+.register-section h6 a {
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+@media (max-width: 520px) {
+  .register-section h1 {
+    font-size: 25px;
+  }
+  .register-dev-form {
+    width: 100%;
+  }
+  .register-section h6 {
+    font-size: 12px;
+  }
+  .register-dev-form input {
+    font-size: 14px;
+  }
+  .input-dev svg {
+    transform: translateY(-50%);
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .register-section h6 {
+    font-size: 11px;
+  }
+  .register-dev-form input {
+    font-size: 11px;
+  }
+  .input-dev svg {
+    transform: translateY(-50%);
+    font-size: 15px;
+  }
+}

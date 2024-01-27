@@ -1,0 +1,160 @@
+.login-section {
+  min-height: 100vh;
+  background-color: var(--bgc-body);
+  color: var(--text-color);
+  width: 100%;
+  position: relative;
+}
+
+.login-section::after {
+  content: "";
+  background: url(../../images/form.svg) no-repeat center;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  pointer-events: none;
+  background-size: cover;
+  opacity: 0.04;
+}
+
+.login-section h1 {
+  text-align: center;
+  margin: 0 0 20px 0;
+  font-size: 40px;
+  color: var(--text-color);
+}
+
+.login-dev-form {
+  background-color: transparent;
+  width: 500px;
+  padding: 20px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: 3;
+}
+
+.login-form {
+  background-color: #6a49f2;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-form input:nth-child(2) {
+  margin-right: 0;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 4px;
+  background-color: var(--bgc-body);
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  color: var(--text-color);
+}
+
+.input-dev {
+  position: relative;
+}
+
+.input-dev svg {
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 25px;
+  position: absolute;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+::placeholder {
+  color: var(--text-color);
+}
+
+.login-section .login-btn {
+  background-color: var(--bgc-body);
+  border: none;
+  outline: none;
+  color: var(--text-color);
+  border-radius: 10px;
+  padding: 10px 20px;
+  width: 40%;
+  margin: 0 auto;
+  transition: 0.4s;
+}
+
+.login-section .login-btn:hover {
+  background-color: var(--dark-purple);
+  color: var(--text-color);
+}
+
+
+.login-section button {
+  background-color: var(--bgc-body);
+  border: none;
+  outline: none;
+  color: var(--text-color);
+  border-radius: 10px;
+  padding: 10px 20px;
+  width: 40%;
+  margin: 0 auto;
+  transition: 0.4s;
+}
+
+.login-section button:hover {
+  background-color: var(--dark-purple);
+  color: var(--text-color);
+}
+
+.login-section h6 {
+  font-size: 18px;
+  text-align: center;
+  margin: 20px 0 0 0;
+}
+
+.login-section h6 a {
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+@media (max-width: 520px) {
+  .login-section h1 {
+    font-size: 25px;
+  }
+  .login-dev-form {
+    width: 100%;
+  }
+  .login-section h6 {
+    font-size: 12px;
+  }
+  .login-dev-form input {
+    font-size: 14px;
+  }
+  .input-dev svg {
+    transform: translateY(-50%);
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .login-section h6 {
+    font-size: 11px;
+  }
+  .login-dev-form input {
+    font-size: 11px;
+  }
+  .input-dev svg {
+    transform: translateY(-50%);
+    font-size: 15px;
+  }
+}

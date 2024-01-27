@@ -1,0 +1,42 @@
+/* sweetaalert-dark.css */
+.swal-overlay {
+    background-color: rgba(0, 0, 0, 0.7) !important;
+}
+  
+.swal-modal {
+    background-color: #0b051d !important;
+}
+
+.swal-title {
+    color: #fff !important;
+}
+
+.swal-text {
+    color: #fff !important;
+}
+
+.swal-icon--success:before,
+.swal-icon--success::after {
+    border-radius: 120px 0 0 120px;
+    top: -7px;
+    left: -33px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-transform-origin: 60px 60px;
+    transform-origin: 60px 60px;
+    background-color: transparent;
+}
+
+.swal-icon--success__hide-corners {
+    display: none;
+}
+
+.swal-button {
+    background-color: #6a49f2 !important;
+    color: #fff !important;
+    transition: 0.4s;
+}
+
+.swal-button:hover {
+    background-color: #6b49f2c0 !important;
+}
