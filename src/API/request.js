@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const request = axios.create({
-  baseURL: "http://localhost:8000",
+  baseURL: "https://nodejs-altwheed-portfolio-api-v1-1.onrender.com",
 });
 
 export default request;
